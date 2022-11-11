@@ -1,0 +1,175 @@
+/*SCSS Contacto*/
+
+
+
+/*<!--========================================================== -->
+                        <!--Variables start-->
+<!--========================================================== -->*/
+
+$primary:#0E2C40;
+$secundary:#2e4469;
+$background:#35495e;
+$black-text:rgb(61, 61, 61);
+$white-text:#ffffff;
+$button-hover:#38755a;
+$color3:#EFBC75;
+$color4:#121524;
+$crimson : crimson;
+$black:#0d0d0d;
+$light-bg:#1a1a1a;
+$white:#000000;
+$light-color:#aaa;
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
+
+/*<!--========================================================== -->
+                        <!--Variables end-->
+<!--========================================================== -->*/
+
+
+
+/*<!--========================================================== -->
+                        <!--Contacto start-->
+<!--========================================================== -->*/
+
+.contact{
+	
+  margin-bottom: 70px;
+	margin-top: 50px;
+	text-align: center;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+
+	.heading{
+	font-size: 43px;
+	}
+
+  .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+
+    .info-container{
+    width:80vw;
+
+
+      h1{
+        font-size: 23px;
+        padding-bottom: 1rem;
+        color:$color3;
+      }
+
+      p{
+        font-size: 20px;
+        line-height: 2;
+        color:$light-color;
+      }
+
+      .share{
+
+        margin-left: 10px;
+
+        a{
+          font-size: 2rem;
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          border-radius: 50%;
+          background: $color4;
+          color:$white-text;
+        margin: 10px;
+
+          &:hover{
+            
+          }
+        }
+      }
+    }
+
+    form{
+      flex:1 1 42rem;
+
+      .inputBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        input{
+          width:49%;
+        }
+      }
+
+      .inputBox input,
+      	textarea{
+        border-radius: 5rem;
+        padding:1.2rem 1.8rem;
+        font-size: 20px;
+        color:$white;
+        text-transform: none;
+        margin:.7rem 0;
+        background: $light-bg;
+      }
+
+      textarea{
+        width:100%;
+        border-radius: 1rem;;
+        resize: none;
+        height: 25rem;
+      }
+
+      .btn{
+        padding:1rem 3rem;
+        cursor: pointer;
+
+        &:hover{
+          background: $white;
+          color:$black;
+        }
+      }
+    }
+  }
+}
+
+/*<!--========================================================== -->
+                        <!--Contacto end-->
+<!--========================================================== -->*/
+
+
+
+/*<!--========================================================== -->
+                        <!--Mediaqueries start-->
+<!--========================================================== -->*/
+
+@media (max-width:1020px) {
+
+	.contact{
+		.heading{
+			font-size: 33px;
+		}
+	}
+}
+
+@media (max-width:600px) {
+
+.contact{
+
+.row{
+
+form{
+  
+.inputBox input{
+      font-size: 12px;
+    }
+
+textarea{
+  font-size: 12px;
+}
+}
+}
+}
+}
+
+/*<!--========================================================== -->
+                        <!--Mediaqueries end-->
+<!--========================================================== -->*/
